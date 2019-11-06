@@ -1,0 +1,201 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[english]{babel}
+\usepackage[round]{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{amsmath, amssymb, amsthm} % typical packages needed for math typesetting
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, includeheadfoot]{geometry} % package for page margins
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% package for proper tables
+\usepackage{booktabs}
+
+% set the line spacing
+\usepackage[doublespacing]{setspace} 
+ 
+ % make sure that URLs are properly hyphenated
+\usepackage{hyperref} 
+\def\UrlBreaks{\do\/\do-}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% document begins here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+	\title{\textbf{How to Master a Bachelor Thesis}\thanks{Scheuch and Voigt are at Vienna Graduate School of Finance (VGSF) and WU (Vienna University of Economics and Business), Welthandelsplatz 1, Building D4, 1020 Vienna, Austria.}}
+	\date{\today}
+	\author{Christoph Scheuch and Stefan Voigt}
+	\clearpage
+	\maketitle
+	\thispagestyle{empty}
+	\begin{abstract}
+		We provide a general guideline on how to write a bachelor thesis in the fields of economics and finance. These notes should answer many questions you might encounter as you write your first thesis. In addition, this document serves as a template which should help to focus on what really counts at the end of the day: the content of your thesis.
+	\end{abstract}
+	
+	\newpage
+	\pagestyle{plain}
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\newpage
+	\pagestyle{plain}
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+		
+	\section{Introduction}
+	We know how it feels to write your first thesis. It can be really challenging at times. Therefore, we decided to provide some information that should help you to get things going. Section~\ref{sec:structure} gives you an idea about the structure of your thesis. Section~\ref{sec:formal} provides details about our formal requirements. In Section~\ref{sec:citations} we give some examples that show you how to cite properly. Then we elaborate why you should use \LaTeX\ and R in Section~\ref{sec:latex} and \ref{sec:R}, respectively. Finally, we provide additional tips in Section~\ref{sec:faqs}.
+	
+	Since this is the second version of ``How to Master a Bachelor Thesis'', we are grateful for any comments and suggestions. 
+	
+%	\section{Deadlines}\label{sec:deadlines}
+%	
+%	We urge you to stick to the following timeline:
+%	\begin{itemize}
+%		\item You received your topic on \textbf{November 16th 2016} and should be looking at this document. There will be a meeting with your supervisor and other students in the following weeks. You should carefully read your assignment and this document until that meeting.
+%		\item You are expected to hand in an \textbf{outline} of your thesis until \textbf{January 16th 2017}. An outline shows how you plan to structure your thesis. It contains some ideas and references for each section that you want to include. Ideally, you will have already conducted a literature review. If you have any open questions, this is the perfect time to address them. We will point you in the right direction on how to proceed with your thesis.
+%		\item You are expected to hand in a \textbf{first draft} of your thesis until \textbf{March 16th 2017}. A draft contains the major arguments of your thesis and most of the results. You should be done with the motivation, the theoretical part and literature review at this stage. Ideally, you also worked on the empirical parts until then. We will provide guidance on what is missing to complete your thesis or how you can improve your thesis.
+%		\item You are expected to hand in a \textbf{final version} of your thesis until \textbf{May 16th 2017}. The final version will serve as the basis of your grade. There will be no further opportunities for comments or refinements after this deadline.
+%		\item Please note that we cannot guarantee to respond to questions before the final deadline after \textbf{April 25th 2017}. 
+%	\end{itemize}
+%	
+%	We have set these deadlines such that you can expect a response from us before the semester and easter break, respectively. If we all stick to these deadlines, then we can all work on our theses during the holidays or go on vacation.
+
+	\section{Structure of the Thesis}\label{sec:structure}
+	
+	We strongly recommend to read the following two short articles on how to write a paper: Cochrane's ``\href{http://faculty.wcas.northwestern.edu/~mdo738/teaching/cochrane.pdf}{Writing Tips for PhD Students}'' and Kiesling's ``\href{http://nuwrite.northwestern.edu/communities/social-sciences/economics/docs/writing-advice-for-papers-in-economics/Kiesling\%20writingguidelines.pdf}{Writing Guidelines for Economics}''.\footnote{If you yearn for more writing tips, check out Plamen Nikolov's \href{http://www.people.fas.harvard.edu/~pnikolov/resources/writingtips.pdf}{guide}. If you even think about a career in academia, browse through \href{https://sites.google.com/site/mkudamatsu/tips4economists}{this collection} of tips for economists. They also apply to the field of finance.} We cannot overemphasize the importance of structure and style for your thesis. Your text should convey the basic ideas and results of your work in the same way as a paper in a good journal does. Of course, we don't expect a full-fledged academic paper or an amazingly original contribution to your field of research. The purpose of a bachelor thesis is rather to show that you are able to convey economic ideas and results to a broader non-academic audience. You should present evidence, cite literature and explain economic mechanisms from an analytic perspective. We know that you will be sometimes tempted to jump to conclusions and to stray into journalistic writing. Don't do this. 
+	
+	Your thesis should consist of the following parts (just like these notes here do):
+    \begin{itemize}
+    	\item Title page with abstract (not more than 200 words)
+    	\item Table of contents
+    	\item List of figures
+    	\item List of tables
+    	\item Main text
+    	\item Bibliography
+    	\item Appendix (if necessary)
+    \end{itemize}
+    
+	\section{Formal requirements}\label{sec:formal}
+	
+	We cannot force you to use a specific software, but we strongly advise you to use some \LaTeX\ software (see Section~\ref{sec:latex} for some demonstration). Regardless of which software you use, your thesis has to comply to the following format requirements:
+	\begin{itemize}
+		\item Format: A4
+		\item Line spacing: at least 1,5 (this document has 2) 
+		\item Font size: at least Computer Modern (11pt), Times New Roman (12pt), or Arial (11pt) (this document hast Computer Modern 12pt)
+		\item Page margins: top 2.5 cm, bottom 2.5 cm, left 2.5 cm, right 2.5 cm
+		\item Alignment: justified (\emph{Blocksatz})
+		\item Page numbering: no numbering for title page, roman numerals for table of contents etc, arabic numerals for main text
+	\end{itemize}	
+	Following these format requirements dramatically increases the readability of your thesis and how much time we can spend on giving you comments. If you use the \LaTeX\ template provided by us, you will automatically fulfill all of the criteria above.
+	
+	\section{Citations}\label{sec:citations}
+		
+	We expect you to cite papers just as in the publications you read. Every time you borrow or summarize an argument from another source, you have to make a reference. Every time you provide an argument that you think you came up with yourself, find a publication that supports that argument. Part of science is linking existing ideas to generate new ones. Keep in mind that we will ask for references if you write something like ''this is obviously a result of XY''.
+		
+	If you cite a paper, favor the present tense. For instance: ``\cite{Cochrane.2005} shows that...'' or ``In a recent paper, \cite{Schwabish.2014} provides...''. 
+		
+	You can also passively refer to other papers. For example: ``there are many guidelines for writing a thesis out there \citep[see e.g.][]{Cochrane.2005}'' or ``data visualization is an important part of empirical research \citep{Schwabish.2014}''.
+		
+	If you want to literally quote authors, then do it like this: ``Strive for precision. Read each sentence carefully. Does each sentence say something, and does it mean what it says? \citep[][p. 5]{Cochrane.2005}''
+		
+	Only cite scientific publications, if possible. Wikipedia or Investopedia articles certainly do \textit{not} fulfill this requirement, but you may cite papers by firms in which they describe their product or service.
+		
+	\section{Writing with \LaTeX}\label{sec:latex}
+	
+	We highly recommend you to write your document in \href{https://en.wikipedia.org/wiki/LaTeX}{\LaTeX}. Most of the academic publications in economics and finance are nowadays written in \LaTeX. Students who are interested in research related jobs should definitely start using it. The main advantages compared to Word include the ease with which you change the format of every single part of your text without messing up the whole document (as Word frequently does). Furthermore, organizing your references becomes very easy once you are used to \href{https://de.wikipedia.org/wiki/BibTeX}{BibTeX}.\footnote{There are several ways in which you can organize your references. An easy open source solution is \href{http://www.jabref.org/}{JabRef}, but as a WU student you can also use \href{https://learn.wu.ac.at/bibliothek/literaturverwaltung}{Citavi} for free.} Frankly, the initial effort seems high at the beginning. That is, typing your first document in \LaTeX\ might be occasionally frustrating. However, please trust us that the effort will definitely pay off in the long run.
+	
+	If you are not really comfortable with programming, then \href{https://www.lyx.org/}{LyX} should be your first choice as a document processor. If you have some experience with coding in any language, then go immediately to \href{http://www.texstudio.org/}{TeXstudio} (or something similar) which gives you much more flexibility. Either way, you have to install a TeX distribution like \href{https://en.wikipedia.org/wiki/TeX_Live}{TeX Live} (for Linux), \href{ttp://miktex.org/}{MikTeX} (for Windows) or \href{https://tug.org/mactex/}{MacTeX} (for Mac OS) before you are able to produce any output. The software is open-source and does not cost you anything. There are many tutorials available in case you need more details, e.g. \href{http://math65740.blogspot.co.at/2015/06/installing-miktex-and-texstudio-on.html}{here}. 
+	
+	\subsection{Tables}
+	
+	Tables help to illustrate your results and \LaTeX\ helps you to create them very fast and simply beautiful.\footnote{Too lazy to create \LaTeX-code for a table on your own? Consider using the \href{http://www.tablesgenerator.com/}{online tables generator} or the Excel-plugin \href{https://www.ctan.org/pkg/excel2latex}{Excel2\LaTeX}.} You can find several examples for the basic \emph{tabular} environment \href{https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabular_environment}{here}. Table~\ref{tab:nameofthetable} gives you a small meaningless example.
+	
+	\begin{table}[h!]
+		\centering
+		\caption[How should a Table look like?]{Note that tables without self-explaining captions are essentially worthless. Help the reader by describing the parameters and values given in the table. Also make sure you explain and interpret the content of your tables in the text.}
+		\begin{tabular}{llr}\toprule
+			\textbf{First name} & \textbf{Last Name} & \textbf{Grade} \\\midrule
+			John                           & Doe       & $7.5$ \\
+			Richard                        & Miles     &   $2$ \\\bottomrule
+		\end{tabular}
+		\label{tab:nameofthetable}
+	\end{table}
+	
+	\subsection{Figures}
+	
+	You can also easily include figures in your document, see e.g. Figure~\ref{fig:example}. You can directly export figures from R to whatever format you prefer. 
+	
+	\begin{figure}[htbp]
+		\includegraphics*[width = \textwidth]{figure.png}
+		\caption[Example for a Figure]{This is a figure of how to include a figure in your \LaTeX\ code.}
+		\label{fig:example}
+	\end{figure}
+	
+	If you feel really adventurous, you can even draw \LaTeX\ graphics with \href{http://www.texample.net/tikz/}{tikz} or \href{https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf}{let R do that}. Even though tikz produces beautiful graphics, it can really stretch your patience and exhaust your computer's memory.
+	
+	\subsection{Equations}
+	
+	When it comes to typesetting equations, \LaTeX is unprecedented and makes your life extremely easy. Make sure your equations are numbered such that you can easily refer to them in the text. If you open the provided .tex file, you see how equations such as equation \eqref{equ} can easily be created with \LaTeX.
+	
+	\begin{align}	
+	\left(\begin{array}{c}
+	y_1\\ 
+	\vdots\\ 
+	y_T
+	\end{array}\right)
+	 =& \left( \begin{array}{ccc}
+	 x_{1,1}&  & x_{1,N} \\ 
+	 &  \ddots&  \\ 
+	 x_{T,1}&  & x_{T,N}
+	 \end{array} \right) \beta + \varepsilon  \\
+	E\left[f(Y)|X\right] = & \int\limits_{r \in \mathbb{R}} f(Y|r)p(r|X)d r  \label{equ}
+	\end{align}
+	
+	\section{Programming with R}\label{sec:R}
+		
+	For econometric exercises, we recommend using the programming language \href{https://en.wikipedia.org/wiki/R\_(programming\_language)}{R}. There are numerous reasons why you should pick up R if you are interested in doing empirical projects. Most importantly, it is open source, so it does not cost you anything. There is a huge active community providing many statistical tools in the form of so-called packages. R is well-known in the international research community. Learning this language will provide you with valuable knowledge for your future career.
+		
+	If you have never used R before, check out the ``\href{http://www.netviale.com/wp-content/uploads/2015/08/Introduction_to_programming_Econometrics_with_R.pdf}{Introduction to Programming Econometrics with R}'' by Bruno Rodrigues. It provides the very basics like how to install R and RStudio,\footnote{\href{https://www.rstudio.com/}{RStudio} is a great open-source interface for R.} how simple calculations work, or how to do simple regressions -- and, most importantly, it is very concise.
+	
+	If you feel comfortable with R, we want to direct your attention to \href{http://r4ds.had.co.nz/}{R for Data Science}, a great book that introduces you to a lot of useful tools for data wrangling and analysis. It also contains some prerequisites and an introduction to working with R.
+       		
+	\section{Some Tips}\label{sec:faqs}
+	
+	In this section, we list some information that we find really useful, but nobody told us about when we were writing our theses. We want to emphasize that we actually (try to) follow these advices ourselves.
+		
+	\begin{enumerate}
+		\item \textbf{Proof-reading} \\
+		Find someone other than yourself who will do a proofreading of your thesis for language and clarity. Ask a friend to check for typos, missing figures, acronyms that are never defined, and vague parts in your descriptions. Try to improve your work before submitting it. Keep in mind that your bachelor thesis is not primarily intended for an audience of experts in the field but should give an impression of your ability to understand and explain your topic also to a broader audience. Ask your peers whether the content of your thesis is clearly understandable. If they do not think so, think about rephrasing!
+		
+		\item \textbf{Academic Writing} \\
+		In case you encounter difficulties to write in an academic style, consider reading Cochrane's and Kiesling's text from above. You can also scroll through an \href{http://www.phrasebank.manchester.ac.uk/}{academic phrasebank} which should give you some idea on how to structure your sentences.
+			
+		\item \textbf{Whom should I ask?} \\
+		We encourage posting your questions on the \href{http://stackexchange.com/}{Stack Exchange} network. On Stack Exchange, you have access to experts from many different fields (e.g. \LaTeX, Econometrics, Academia, Quantitative Finance). Moreover, it is quite likely that your question has already been asked and answered there. Whenever you post a question, you typically obtain very fast feedback. Furthermore, you can contribute to the network by answering questions as well. We encourage you to share your posted question with your peers. 
+		
+		\item \textbf{How can I organize all the thoughts, citations and ideas I have in mind?} \\
+		Nowadays, efficient software tools are readily available. As a student of WU you have free access to tools such as Citavi, helping you to create your references, sorting your thoughts and to structure your text. Always keep your bibliography up-to-date, it will save you a lot of time at the end if you are not forced to search for some article you have read a couple of months ago. We also use \href{https://evernote.com/intl/de/}{Evernote} to organize our research output and all kinds of notes that belong to a project. It's a great tool to store intermediate results and it's for free!
+		
+		\item \textbf{Scheduling}\\
+		Be aware of the deadlines we provide and put them in your calendar!. Keep in mind that the final steps before submissions take time. Also keep in mind that friends or your supervisor may need some time to give you valuable feedback. So begin with a clear set of intermediate deadlines and if you start to miss them, take action! 
+	\end{enumerate}
+
+	% references appear here
+	\bibliography{bibliography}
+	
+	% appendix starts here
+	\appendix
+	\section{Appendix}
+	There is no appendix actually.	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% document ends here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
