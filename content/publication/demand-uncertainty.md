@@ -3,7 +3,7 @@ title = "Crowdfunding with Private Consumer Valuations"
 date = "2019-11-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["[Christoph Scheuch](https://ckscheuch.github.io/)"]
+authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]
 
 # Publication type.
 # Legend:

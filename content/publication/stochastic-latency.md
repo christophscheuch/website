@@ -3,7 +3,7 @@ title = "Limits to Arbitrage in Markets with Stochastic Settlement Latency"
 date = "2018-11-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)", "[Christoph Scheuch](https://ckscheuch.github.io/)", "[Stefan Voigt](https://voigtstefan.github.io/)"]
+authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)", "[Christoph Scheuch](https://christophscheuch.github.io/)", "[Stefan Voigt](https://voigtstefan.github.io/)"]
 
 # Publication type.
 # Legend:

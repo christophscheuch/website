@@ -1,9 +1,9 @@
-+++
+﻿+++
 title = "Fishing with Pearls: The Value of Lending Relationships with Prestigious Firms"
 date = "2017-11-16"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["[Alexander Mürmann](https://www.wu.ac.at/finance/people/faculty/muermann/)", "[Thomas Rauter](http://www.thomas-rauter.com/)", "[Christoph Scheuch](https://ckscheuch.github.io/)"]
+authors = ["[Alexander Mürmann](https://www.wu.ac.at/finance/people/faculty/muermann/)", "[Thomas Rauter](http://www.thomas-rauter.com/)", "[Christoph Scheuch](https://christophscheuch.github.io/)"]
 
 # Publication type.
 # Legend:

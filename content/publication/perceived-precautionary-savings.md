@@ -3,7 +3,7 @@ title = "Perceived Precautionary Savings Motives: Evidence from FinTech"
 date = "2019-01-28"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["[Francesco D'Acunto](http://www.francescodacunto.com/)", "[Thomas Rauter](http://www.thomas-rauter.com/)", "[Christoph Scheuch](https://ckscheuch.github.io/)", "[Michael Weber](http://faculty.chicagobooth.edu/michael.weber/)"]
+authors = ["[Francesco D'Acunto](http://www.francescodacunto.com/)", "[Thomas Rauter](http://www.thomas-rauter.com/)", "[Christoph Scheuch](https://christophscheuch.github.io/)", "[Michael Weber](http://faculty.chicagobooth.edu/michael.weber/)"]
 
 # Publication type.
 # Legend:
