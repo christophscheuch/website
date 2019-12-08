@@ -1,6 +1,6 @@
 +++
-title = "Limits to Arbitrage in Markets with Stochastic Settlement Latency"
-date = "2018-11-01"
+title = "Trust Takes Time: Limits to Arbitrage in Decentralized Markets"
+date = "2019-12-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)", "[Christoph Scheuch](https://christophscheuch.github.io/)", "[Stefan Voigt](https://voigtstefan.github.io/)"]
@@ -21,7 +21,7 @@ publication = "Working Paper (Under Revision)"
 publication_short = "Working Paper (Under Revision)"
 
 # Abstract and optional shortened version.
-abstract = "Distributed ledger technologies rely on consensus protocols confronting traders with random waiting times until the transfer of ownership is accomplished. This time-consuming settlement process exposes arbitrageurs to price risk and imposes limits to arbitrage. We derive theoretical arbitrage boundaries under general assumptions and show that they increase with expected latency, latency uncertainty, spot volatility, and risk aversion. Using high-frequency data from the Bitcoin network, we estimate arbitrage boundaries due to settlement latency of on average 124 basis points, covering 88% of the observed cross-exchange price differences. Settlement through decentralized systems thus induces non-trivial frictions affecting market efficiency and price formation. "
+abstract = "Distributed ledger technologies replace trusted intermediaries with time-consuming consensus protocols to record the transfer of ownership. This settlement latency imposes limits to arbitrage and hinders price discovery. We theoretically derive arbitrage bounds that increase with expected latency, latency uncertainty, volatility and risk aversion. Using Bitcoin orderbook and network data, we estimate arbitrage bounds of on average 121 basis points, explaining 91% of the observed cross-market price differences. Consistent with our theory, periods of high latency risk exhibit large price differences, while asset flows chase arbitrage opportunities. Decentralized settlement without centralized clearing thus introduces a non-trivial friction that affects market efficiency."
 abstract_short = ""
 
 # Featured image thumbnail (optional)

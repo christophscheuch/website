@@ -1,6 +1,6 @@
 +++
 title = "Crowdfunding with Private Consumer Valuations"
-date = "2019-11-01"
+date = "2019-12-06"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]
@@ -21,7 +21,7 @@ publication = "Work in Progress"
 publication_short = "Work in Progress"
 
 # Abstract and optional shortened version.
-abstract = "Crowdfunding allows entrepreneurs to sell claims on future products before investment takes place. Entrepreneurs thereby generate demand information and may condition the product development on it. I characterize the profit-maximizing crowdfunding mechanism in a setting where consumers have private information about their valuation of the potential future product. Two types of demand uncertainty matter for the optimal mechanism: the number of consumers who positively value the product and the magnitude of their valuation. A flexible price commitment that depends on the number of pledgers can implement first-best financing outcomes, but there exist parameter constellations under which entrepreneurs prefer fixed prices. "
+abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments. Entrepreneurs thereby generate demand information and may condition their investment decisions on it. I characterize the profit-maximizing crowdfunding mechanism in a setting where consumers have private information about product valuations. Two types of demand uncertainty matter for the profit-maximizing mechanism: the number of consumers who value the product and the magnitude of their valuation. Entrepreneurs may finance all viable projects by committing to prices that decrease in the number of pledgers, thus granting consumers with high valuations an information rent. If the forgone rent is large, however, entrepreneurs prefer fixed high prices that preclude financing of demand states with low valuations."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
