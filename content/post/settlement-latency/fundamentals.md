@@ -1,7 +1,7 @@
 ---
 title: 'Distributed Ledger Technology and Settlement Latency'
-subtitle: 'A companion piece to the paper on limits to arbitrage in decentralized markets'
-summary: How latency enters blockchain-based settlement.
+subtitle: 
+summary: 'A companion piece to [Hautsch et al (2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302159) on how latency enters blockchain-based settlement'
 authors:
 - admin
 tags:
