@@ -33,7 +33,7 @@ projects: []
 
 <dl>
 
-<p>As a newbie to the empirical asset pricing literature, I found it quite hard to fully grasp how results come about solely relying on the data descriptions in the corresponding papers. Fortunately, <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a> provide an excellent textbook that not only provides a comprehensive overview of the empirical research on the cross-section of expected returns, but also offers detailed description of common practices in sample construction and methodology. In this series of notes, I replicate the main results of their textbook in R. Moreover, I try to implement all analyses in a tidy manner using mainly packages beloning to the <code>[tidyverse](https://www.tidyverse.org/)</code> family since it’s fun and fairly transparent.</p>
+<p>As a newbie to the empirical asset pricing literature, I found it quite hard to fully grasp how results come about solely relying on the data descriptions in the corresponding papers. Fortunately, <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a> provide an excellent textbook that not only provides a comprehensive overview of the empirical research on the cross-section of expected returns, but also offers detailed description of common practices in sample construction and methodology. In this series of notes, I replicate the main results of their textbook in R. Moreover, I try to implement all analyses in a tidy manner using mainly packages beloning to the <code>tidyverse</code> family since it’s fun and fairly transparent.</p>
 <p>In this first note I start out with the raw monthly CRSP data, compute some descriptive statistics and construct the main sample I use in later analyses. In the next note, I’ll use the constructed sample to investigate the size effect. So let us start with the list of packages that I use throughout the note.</p>
 <pre class="r"><code>library(tidyverse) # for grammar
 library(lubridate) # for working with dates
@@ -319,21 +319,19 @@ crspa_dsf &lt;- read_csv(&quot;raw/crspa_dsf.csv&quot;)
 colnames(crspa_dsf) &lt;- tolower(colnames(crspa_dsf))
 nrow(crspa_dsf)
 
-## keep only common stocks and relevant columns
+# keep only common stocks and relevant columns
 crsp_daily &lt;- crspa_dsf %&gt;%
   filter(shrcd %in% c(10, 11)) %&gt;%
   transmute(permno = as.integer(permno),     
             date = ymd(date),               
             ret = as.numeric(ret) * 100    
   )
-nrow(crsp_daily)
 
-## keep only distinct observations
+# keep only distinct observations
 crsp_daily &lt;- crsp_daily %&gt;%
   distinct()
-nrow(crsp_daily)
 
-## add fama french factors (https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
+# add fama french factors (https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
 factors_ff &lt;- read_csv(&quot;raw/F-F_Research_Data_Factors_daily.csv&quot;, skip = 3)
 
 factors_ff &lt;- factors_ff %&gt;%
@@ -344,18 +342,16 @@ factors_ff &lt;- factors_ff %&gt;%
 
 crsp_daily &lt;- crsp_daily %&gt;%
   left_join(factors_ff, by = &quot;date&quot;)
-nrow(crsp_daily)
 
-## drop rows with missing values
+# drop rows with missing values
 crsp_daily &lt;- crsp_daily %&gt;%
   na.omit()
-nrow(crsp_daily)
 
-## set reference date
+# set reference date
 crsp_daily &lt;- crsp_daily %&gt;%
   mutate(date_start = floor_date(date, &quot;month&quot;))
 
-## export sample
+# export sample
 write_rds(crsp_daily, &quot;data/crsp_daily.rds&quot;)</code></pre>
 
 </dl>

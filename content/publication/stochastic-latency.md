@@ -1,6 +1,6 @@
 +++
-title = "Trust Takes Time: Limits to Arbitrage in Decentralized Markets"
-date = "2019-12-01"
+title = "Trust Takes Time: Limits to Arbitrage in Blockchain-Based Markets"
+date = "2020-02-11"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)", "[Christoph Scheuch](https://christophscheuch.github.io/)", "[Stefan Voigt](https://voigtstefan.github.io/)"]
@@ -21,7 +21,7 @@ publication = "Working Paper (Under Revision)"
 publication_short = "Working Paper (Under Revision)"
 
 # Abstract and optional shortened version.
-abstract = "Distributed ledger technologies replace trusted intermediaries with time-consuming consensus protocols to record the transfer of ownership. This settlement latency imposes limits to arbitrage and hinders price discovery. We theoretically derive arbitrage bounds that increase with expected latency, latency uncertainty, volatility and risk aversion. Using Bitcoin orderbook and network data, we estimate arbitrage bounds of on average 121 basis points, explaining 91% of the observed cross-market price differences. Consistent with our theory, periods of high latency risk exhibit large price differences, while asset flows chase arbitrage opportunities. Decentralized settlement without centralized clearing thus introduces a non-trivial friction that affects market efficiency."
+abstract = "Distributed ledger technologies replace trusted clearing counterparties and security depositories with time-consuming consensus protocols to record the transfer of ownership. This settlement latency exposes cross-market arbitrageurs to price risk. We theoretically derive arbitrage bounds that increase with expected latency, latency uncertainty, volatility and risk aversion. Using Bitcoin orderbook and network data, we estimate arbitrage bounds of on average 121 basis points, explaining 91% of the observed cross-market price differences. Consistent with our theory, periods of high latency-implied price risk exhibit large price differences, while asset flows chase arbitrage opportunities. Blockchain-based settlement thus introduces a non-trivial friction that impedes arbitrage activity."
 abstract_short = ""
 
 # Featured image thumbnail (optional)

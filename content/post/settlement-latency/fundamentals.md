@@ -33,7 +33,7 @@ projects: []
 
 In its essence, the distributed ledger technology (DLT) is a digital record-keeping system that allows for the verification, updating and storage of transfers of ownership without the need for a designated third party. It relies on a single ledger that is distributed among many different parties who are incentivized to ensure a truthful representation of the transaction history. Nakamoto first popularized the idea of DLTs in a financial context with the Bitcoin protocol and the underlying concept of blockchain. Nowadays, however, Bitcoin is just one of several hundred applications that use the blockchain technology, while other forms of DLTs, in particular directed acyclic graphs (DAG), are actively explored as well. In the following, we first describe the building blocks of DLT before we turn to a more detailed discussion of blockchains and DAGs.
 
-## Fundamentals of distributed ledgers
+## Fundamentals of Distributed Ledgers
 
 DLT solves the fundamental problems that arise in the context of digital transfer of ownership. Transactions are pieces of information that agents authorize to be sent to other agents. A record-keeping system has to ensure that transactions are signed and recorded in the correct order. In principle, a single authority could verify signatures and consistency of transactions, but it would be prone to failures. As a result, it might be desirable to distribute this type of information to a system with multiple machines that can sustain the failure of single units. A fault-tolerant design would enable a system to continue its operation, even when one or several units stop working.
 
@@ -51,11 +51,11 @@ While validators in a PoW system utilize substantial computational resources to 
 
 Other consensus protocols combine features of PoW and PoS. For instance, delegated Proof-of-Stake (DPoS) relies both on stakeholders, who elect validators and have voting rights proportional to their stake, and validators, who exert effort to append information to the ledger. The reputation of validators determines their chance for reelection, while stakeholders have incentives to select truthful validators. 
 
-## Directed acyclic graphs
+## Directed Acyclic Graphs
 
 While blockchains record transactions in blocks, DAGs store information in single transactions. More specifically, any transaction represents a node in a graph (i.e., a set of vertices connected by edges) and each new transaction confirms at least one previous transaction, depending on the configuration of the underlying protocol. The longer the branch on which a transaction is based, the more certain is its validity. Intuitively, only once a transaction is broadcasted sufficiently throughout the network, it is verified. DAGs thus hinge on a steady flow of new transactions that enter the network to verify and reference old transactions. The connections between transactions are directed (i.e., the edges in the form of confirmations are one way) and the whole graph is acyclic (i.e., it is impossible to traverse the entire graph starting from a single edge). Given a high number of transactions, DAG ledgers scale better and can achieve consensus faster than blockchains which rely on fixed block sizes and limited verification rates. 
 
-## Settlement latency in distributed systems
+## Settlement Latency in Distributed Systems
 
 A distributed system features settlement latency in transaction verification, as it is ex-ante unclear how long it takes until validators achieve consensus or to broadcast that consensus through the network. For PoW, latency depends on the time it takes for validators to find a solution to the computationally expensive problem. In the Bitcoin protocol, for instance, validators append a new block on average every 10 minutes, while the process takes about 20 seconds in the Ethereum protocol. For PoS, latency depends on how long disagreement on the correct order of transactions persists. For both blockchain-based protocols, the information still needs to be distributed to all other nodes in the network, possibly facing technological limitations that prevent instant percolation. Technological limits are also particularly relevant for DAGs which rely on a large number of nodes that verify transactions and distribute information through the network. Overall, any distributed system that refrains from using designated third-parties bearing the counterparty risk associated with transactions thus features settlement latency. 
 

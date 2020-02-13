@@ -1,6 +1,6 @@
 +++
-title = "Crowdfunding with Private Consumer Valuations"
-date = "2019-12-06"
+title = "Crowdfunding and Demand Uncertainty"
+date = "2020-02-13"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]
@@ -21,7 +21,7 @@ publication = "Work in Progress"
 publication_short = "Work in Progress"
 
 # Abstract and optional shortened version.
-abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments. Entrepreneurs thereby generate demand information and may condition their investment decisions on it. I characterize the profit-maximizing crowdfunding mechanism in a setting where consumers have private information about product valuations. Two types of demand uncertainty matter for the profit-maximizing mechanism: the number of consumers who value the product and the magnitude of their valuation. Entrepreneurs may finance all viable projects by committing to prices that decrease in the number of pledgers, thus granting consumers with high valuations an information rent. If the forgone rent is large, however, entrepreneurs prefer fixed high prices that preclude financing of demand states with low valuations."
+abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments. Entrepreneurs thereby generate demand information and may condition their investment decisions on it. I characterize the profit-maximizing crowdfunding mechanism in a setting where consumers have private information about product valuations and entrepreneurs face uncertainty about possible reservation prices. Entrepreneurs may finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if the information rents exceed a threshold, entrepreneurs prefer fixed high prices that preclude financing of demand states with low reservation prices."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
