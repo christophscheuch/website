@@ -21,7 +21,7 @@ publication = "Work in Progress"
 publication_short = "Work in Progress"
 
 # Abstract and optional shortened version.
-abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments. Entrepreneurs thereby generate demand information and may condition their investment decisions on it. I characterize the profit-maximizing crowdfunding mechanism in a setting where consumers have private information about product valuations and entrepreneurs face uncertainty about possible reservation prices. Entrepreneurs may finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if the information rents exceed a threshold, entrepreneurs prefer fixed high prices that preclude financing of demand states with low reservation prices."
+abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments and at the same time generate demand information that benefits screening for viable projects. I characterize the profit-maximizing crowdfunding mechanism when the entrepreneur knows neither the number of consumers who positively value the product, nor their reservation prices. Entrepreneurs can finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if information rents exceed a threshold, entrepreneurs prefer fixed high prices that lead to no financing in states with low reservation prices."
 abstract_short = ""
 
 # Featured image thumbnail (optional)

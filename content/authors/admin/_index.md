@@ -23,10 +23,10 @@ organizations:
 bio: My interests include R, Data Science and FinTech stuff.
 
 interests:
+- R
 - Data Science
 - FinTech
 - Blockchain
-
 education:
   courses:
   - course: PhD in Finance
@@ -75,6 +75,6 @@ email: ""
 # - Visitors
 ---
 
-I am a PhD candidate at the Vienna Graduate School of Finance. My research focuses on the economics of technological innovations in the financial industry. I recently released a paper that shows how blockchain-based settlement may introduce limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the availability of overdraft facilities through mobile banking apps. I currently investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects. 
+I am a PhD candidate at the Vienna Graduate School of Finance. My research focuses on the economics of technological innovations in the financial industry. I recently released a paper that shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the availability of overdraft facilities through mobile banking apps. I currently investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects. 
 
 Before starting my PhD studies, I was a research assistant in the field of labor economics at the [Institute for Advanced Studies](https://www.ihs.ac.at/de/) and an intern at [Ithuba Capital](https://www.ithubacapital.com/home.html) and the Austrian [Financial Market Authority](https://www.fma.gv.at/).
