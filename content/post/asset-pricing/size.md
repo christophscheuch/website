@@ -32,9 +32,9 @@ projects: []
 ---
 
 <dl>
-<p>In this note, I explore the relation between firm size and stock returns following the methodology outlined in <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a>. In two earlier notes, I first <a href="https://christophscheuch.github.io/post/asset-pricing/crsp-sample/">prepared the CRSP sample</a> in R and then <a href="https://christophscheuch.github.io/post/asset-pricing/beta/">estimated and analyzed market betas</a> using the same data. I do not go into the theoretical foundations of the size effect, but rather focus on its estimation in a tidy manner. I just want to mention that the size effect refers to the observation that stocks with large market capitalization tend to have lower returns than stocks with small market capitalizations (e.g., <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1992.tb04398.x">Fama and French, 1992</a>). The usual disclaimer applies, so the text below references an opinion and is for information purposes only and I do not intend to provide any investment advice. I also like to mention that the code below replicates most of the results of Bali et al up to a few basis points if I restrict the data to their sample period.</p>
+<p>In this note, I explore the relation between firm size and stock returns following the methodology outlined in <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a>. In two earlier notes, I first <a href="https://christophscheuch.github.io/post/asset-pricing/crsp-sample/">prepared the CRSP sample</a> in R and then <a href="https://christophscheuch.github.io/post/asset-pricing/beta/">estimated and analyzed market betas</a> using the same data. I do not go into the theoretical foundations of the size effect, but rather focus on its estimation in a tidy manner. I just want to mention that the size effect refers to the observation that stocks with large market capitalization tend to have lower returns than stocks with small market capitalizations (e.g., <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.1992.tb04398.x">Fama and French, 1992</a>). The usual disclaimer applies, so the text below references an opinion and is for information purposes only and I do not intend to provide any investment advice. The code below replicates most of the results of Bali et al. up to a few basis points if I restrict my data to their sample period.</p>
 <p>I mainly use the following packages throughout this note:</p>
-<pre class="r"><code>library(tidyverse)  # for grammar
+<pre class="r"><code>library(tidyverse)
 library(lubridate)  # for working with dates
 library(broom)      # for tidying up estimation results
 library(kableExtra) # for nicer html tables</code></pre>
@@ -48,7 +48,7 @@ crsp &lt;- crsp %&gt;%
   left_join(betas %&gt;%
               select(permno, date_start, beta = beta_12m), 
             by = c(&quot;permno&quot;, &quot;date_start&quot;)) # note: date_start refers to beginning of month</code></pre>
-<p>Therer are two approaches to measure the market capitalization of a stock. The simplest approach is to take the share price and number of shares outstanding as of the end of each month for which the market capitalization is measured. This is the approach I used in the earlier post to construct the variable <code>mktcap</code>. Alternatively, Fama and French calculate market capitalization as of the last trading day of June in each year and hold the value constant for the months from June of the same year until May of the next year. The benefit of this approach is that the market capitalization measure does not vary with short-term movements in the stock price which may cause unwanted correlation with the stock returns. I implement the Fama-French approach below by defining a reference date for each month and then adding the June market cap as an additional column.</p>
+<p>Therer are two approaches to measure the market capitalization of a stock. The simplest approach is to take the share price and number of shares outstanding as of the end of each month for which the market capitalization is measured. This is the approach I used in the sample construction post to define the variable <code>mktcap</code>. Alternatively, Fama and French calculate market capitalization as of the last trading day of June in each year and hold the value constant for the months from June of the same year until May of the next year. The benefit of this approach is that the market capitalization measure does not vary with short-term movements in the stock price which may cause unwanted correlation with the stock returns. I implement the Fama-French approach below by defining a reference date for each month and then adding the June market cap as an additional column.</p>
 <pre class="r"><code>crsp &lt;- crsp %&gt;%
   mutate(year = year(date),
          month = month(date),
@@ -62,7 +62,7 @@ crsp_mktcap_ff &lt;- crsp %&gt;%
 
 crsp &lt;- crsp %&gt;%
   left_join(crsp_mktcap_ff, by = c(&quot;permno&quot;, &quot;reference_date&quot;))</code></pre>
-<p>As it turns out, which approach we use has little impact on the results of the empirical analyses as the measures are highly correlated. While the timing of the calculation has a small effect, the distribution of measures might have a profound impact. As I show below, the distribution of market capitalization is highly skewed with a small number of stocks whose market capitalization is very large. For regression analyses, I hence use the log of market capitalization which I denote as size. For more meaningful interpretation of the market capitalization measures, I also calculate inflation-adjusted values (in terms of end of 2018 dollars).</p>
+<p>As it turns out, which approach I use has little impact on the results of the empirical analyses as the measures are highly correlated. While the timing of the calculation has a small effect, the distribution of measures might have a profound impact. As I show below, the distribution of market capitalization is highly skewed with a small number of stocks whose market capitalization is very large. For regression analyses, I hence use the log of market capitalization which I denote as size. For more meaningful interpretation of the market capitalization measures, I also calculate inflation-adjusted values (in terms of end of 2018 dollars).</p>
 <pre class="r"><code>crsp &lt;- crsp %&gt;%
   mutate(mktcap_cpi = mktcap / cpi,
          mktcap_ff_cpi = mktcap_ff / cpi,
@@ -764,7 +764,7 @@ size_ff
 <div id="portfolio-analysis" class="section level2">
 <h2>Portfolio Analysis</h2>
 <p>To analyze the cross-sectional relation between market capitalization and future stock returns, I start with univariate portfolio analysis. The idea is to sort all stocks into portfolios based on quantiles calculated using NYSE stocks only and then calculate equal-weighted and value-weighted average returns for each portfolio.</p>
-<p>Turns out that I need to adjust the basic <code>weighted.mean</code> function to take out observations with missing weights because it would <a href="https://stackoverflow.com/questions/40269022/weighted-average-in-r-using-na-weights">otherwise return missing values</a>. This is important whenever a stock’s returns are define while the market capitalization is not (for whatever reason).</p>
+<p>Turns out that I need to adjust the basic <code>weighted.mean</code> function to take out observations with missing weights because it would <a href="https://stackoverflow.com/questions/40269022/weighted-average-in-r-using-na-weights">otherwise return missing values</a>. This is important whenever a stock’s return is defined while the market capitalization is not (e.g. due to missing number of shares outstanding).</p>
 <pre class="r"><code>weighted_mean &lt;- function(x, w, ..., na.rm = FALSE){
   if(na.rm){
     x1 &lt;- x[!is.na(x) &amp; !is.na(w)]
@@ -773,7 +773,7 @@ size_ff
   }
   weighted.mean(x, w, ..., na.rm = FALSE)
 }</code></pre>
-<p>The next function I use is a helper function that returns a list of quantile functions that I can throw into the <code>summarize</code> command to get a list of breakpoints for any given number of portfolios. The code snippet below is a modified version of the code found <a href="https://tbradley1013.github.io/2018/10/01/calculating-quantiles-for-groups-with-dplyr-summarize-and-purrr-partial/">here</a>. Most importantly, the function uses <code>purrr:partial</code> to fil in some arguments to the quantile functions.</p>
+<p>The next function I use is a helper function that returns a list of quantile functions that I can throw into the <code>summarize</code> command to get a list of breakpoints for any given number of portfolios. The code snippet below is a modified version of the code found <a href="https://tbradley1013.github.io/2018/10/01/calculating-quantiles-for-groups-with-dplyr-summarize-and-purrr-partial/">here</a>. Most importantly, the function uses <code>purrr:partial</code> to fil in some arguments to the quantile functions. I apply the function to return breakpoints for 3 market cap portfolios as an example.</p>
 <pre class="r"><code>get_breakpoints_funs &lt;- function(var, n_portfolios = 10) {
   # get relevant percentiles
   percentiles &lt;- seq(0, 1, length.out = (n_portfolios + 1))
@@ -2046,7 +2046,7 @@ t-Stat
 <div id="regression-analysis" class="section level2">
 <h2>Regression Analysis</h2>
 <p>As a last step, I analyze the relation between firm size and stock returns using <a href="https://www.jstor.org/stable/1831028?seq=1">Fama and MacBeth (1973)</a> regression analysis. Each month, I perform a cross-sectional regression of one-month-ahead excess stock returns on the given measure of firm size. Time-series averages over these cross-sectional regressions then provide the desired results.</p>
-<p>Again, I essetnailly recylce functions that I developed in <a href="https://christophscheuch.github.io/post/asset-pricing/beta/">an earlier post</a>. Note that I condition on all three explanatory variables being defined in the data, regardless of which measure I am using. I do this to ensure comparability across results, i.e. I want to run the same set of regressions across different specifications.</p>
+<p>Again, I essentially recylce functions that I developed in <a href="https://christophscheuch.github.io/post/asset-pricing/beta/">an earlier post</a>. Note that I depart from Bali et al. and condition on all three explanatory variables being defined in the data, regardless of which measure I am using. I do this to ensure comparability across results, i.e. I want to run the same set of regressions across different specifications. Otherwise I cannot evaluate whether adding a covariate, using a different measure or changes in sample composition lead to different results (or all of them).</p>
 <pre class="r"><code>winsorize &lt;- function(x, cut = 0.005){
   cut_point_top &lt;- quantile(x, 1 - cut, na.rm = TRUE)
   cut_point_bottom &lt;- quantile(x, cut, na.rm = TRUE)
@@ -2313,6 +2313,6 @@ n
 </tr>
 </tbody>
 </table>
-<p>The regression results show a statisticall significant negative relation between firm size and abnormal stock returns. The results also show that controling for market beta neither yields a statistically significant relation to stock returns, nor does it impact the coefficient estimate on firm size. This result contradicts the fundamental prediction of the CAPM that market beta is the only determinant of cross-sectional variation in expected returns. Also note that the explanatory power of size and beta is still very low.</p>
+<p>The regression results show a statisticall significant negative relation between firm size and abnormal stock returns. The results also show that controling for market beta neither yields a statistically significant relation to stock returns, nor does it impact the coefficient estimate on firm size. This result contradicts the fundamental prediction of the CAPM that market beta is the only determinant of cross-sectional variation in expected returns. Also note that the explanatory power of size and beta is still very low (see, e.g., <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/0022-1082.00144">Elton, 1999</a>).</p>
 
 </dl>
