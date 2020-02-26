@@ -34,3 +34,5 @@ When you are ready to deploy your site, run
 blogdown::hugo_build()
 ```
 and Hugo builds your site into the `public` folder. 
+
+To add comment feature follow the instructions [here](https://mscipio.github.io/post/utterances-comment-engine/)
