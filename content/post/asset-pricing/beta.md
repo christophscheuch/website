@@ -5,7 +5,7 @@ summary: 'On the estimation on market betas and their relation to stock returns'
 authors:
 - admin
 tags:
-- Academic
+- Asset Pricing
 categories:
 - Asset Pricing
 date: "2020-02-13T00:00:00Z"

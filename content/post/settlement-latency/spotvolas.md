@@ -5,7 +5,7 @@ summary: 'An application of the spotvolatility estimator from [Hautsch et al (20
 authors:
 - admin
 tags:
-- Academic
+- Blockchain
 categories:
 - Blockchain
 date: "2019-12-10T00:00:00Z"

@@ -5,7 +5,7 @@ summary: 'On the relation of firm size and future stock returns'
 authors:
 - admin
 tags:
-- Academic
+- Asset Pricing
 categories:
 - Asset Pricing
 date: "2020-02-21T00:00:00Z"

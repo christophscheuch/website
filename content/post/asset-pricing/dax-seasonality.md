@@ -5,7 +5,8 @@ summary: 'A quick evaluation of seasonal patterns in an equity index'
 authors:
 - admin
 tags:
-- Academic
+- Asset Pricing
+- Random
 categories:
 - Asset Pricing
 date: "2020-01-31T00:00:00Z"

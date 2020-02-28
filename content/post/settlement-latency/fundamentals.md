@@ -5,7 +5,7 @@ summary: 'A companion piece to [Hautsch et al (2019)](https://papers.ssrn.com/so
 authors:
 - admin
 tags:
-- Academic
+- Blockchain
 categories:
 - Blockchain
 date: "2019-12-03T00:00:00Z"

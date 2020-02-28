@@ -5,7 +5,7 @@ summary: 'On the relation of book-to-market ratio and future stock returns'
 authors:
 - admin
 tags:
-- Academic
+- Asset Pricing
 categories:
 - Asset Pricing
 date: "2020-02-26T00:00:00Z"

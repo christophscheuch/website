@@ -5,7 +5,7 @@ summary: 'On the preparation of monthly return data for empirical research on th
 authors:
 - admin
 tags:
-- Academic
+- Asset Pricing
 categories:
 - Asset Pricing
 date: "2020-01-24T00:00:00Z"

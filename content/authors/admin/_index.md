@@ -23,7 +23,7 @@ organizations:
 bio: My interests include R, Data Science and FinTech stuff.
 
 interests:
-- R
+- R / tidyverse
 - Data Science
 - FinTech
 - Blockchain
