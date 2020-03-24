@@ -17,8 +17,8 @@ authors = ["[Francesco D'Acunto](http://www.francescodacunto.com/)", "[Thomas Ra
 publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "Working Paper"
-publication_short = "Working Paper"
+publication = "NBER Working Paper"
+publication_short = "NBER Working Paper"
 
 # Abstract and optional shortened version.
 abstract = "We study the spending response of first-time borrowers to an overdraft facility and elicit their preferences, beliefs, and motives through a FinTech application. Users increase their spending permanently, lower their savings rate, and reallocate spending from non-discretionary to discretionary goods. Interestingly, liquid users react more than others but do not tap into negative deposits. The credit line acts as a form of insurance. These results are not fully consistent with models of financial constraints, buffer stock models, or present-bias preferences. We label this channel perceived precautionary savings motives: Liquid users behave as if they faced strong precautionary savings motives even though no observables, including elicited preferences and beliefs, suggest they should."

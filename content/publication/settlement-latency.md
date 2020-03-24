@@ -1,6 +1,6 @@
 +++
-title = "Trust Takes Time: Limits to Arbitrage in Blockchain-Based Markets"
-date = "2020-02-11"
+title = "Building Trust Takes Time: Limits to Arbitrage in Blockchain-Based Markets"
+date = "2020-03-24"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)", "[Christoph Scheuch](https://christophscheuch.github.io/)", "[Stefan Voigt](https://voigtstefan.github.io/)"]
@@ -17,8 +17,8 @@ authors = ["[Nikolaus Hautsch](https://homepage.univie.ac.at/nikolaus.hautsch/)"
 publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "Working Paper (Under Revision)"
-publication_short = "Working Paper (Under Revision)"
+publication = "Working Paper"
+publication_short = "Working Paper"
 
 # Abstract and optional shortened version.
 abstract = "Distributed ledger technologies replace trusted clearing counterparties and security depositories with time-consuming consensus protocols to record the transfer of ownership. This settlement latency exposes cross-market arbitrageurs to price risk. We theoretically derive arbitrage bounds that increase with expected latency, latency uncertainty, volatility and risk aversion. Using Bitcoin orderbook and network data, we estimate arbitrage bounds of on average 121 basis points, explaining 91% of the observed cross-market price differences. Consistent with our theory, periods of high latency-implied price risk exhibit large price differences, while asset flows chase arbitrage opportunities. Blockchain-based settlement thus introduces a non-trivial friction that impedes arbitrage activity."

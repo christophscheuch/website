@@ -1,6 +1,6 @@
 +++
 title = "Crowdfunding and Demand Uncertainty"
-date = "2020-02-13"
+date = "2020-03-25"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]

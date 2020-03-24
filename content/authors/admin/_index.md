@@ -18,8 +18,6 @@ organizations:
   url: "https://www.wikifolio.com"
 - name: Vienna Graduate School of Finance
   url: "http://www.vgsf.ac.at/welcome/"
-- name: WU (Vienna University of Economics and Business)
-  url: "http://www.wu.ac.at/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My interests include Data Science, R and FinTech stuff.
@@ -78,6 +76,6 @@ email: ""
 ---
 I recently joined [wikifolio](https://www.wikifolio.com) as Head of Business Intelligence and Data Science. 
 
-I am also a PhD candidate at the Vienna Graduate School of Finance where my research focuses on the economics of technological innovations in the financial industry. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the availability of overdraft facilities through mobile banking apps. I currently investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under complex valuation structures. 
+I am also a PhD candidate at the [Vienna Graduate School of Finance](https://www.vgsf.ac.at/) where my research focuses on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. I currently investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 
 
 Before starting my PhD studies, I was a research assistant in the field of labor economics at the [Institute for Advanced Studies](https://www.ihs.ac.at/de/) and an intern at [Ithuba Capital](https://www.ithubacapital.com/home.html) and the Austrian [Financial Market Authority](https://www.fma.gv.at/).
