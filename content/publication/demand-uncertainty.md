@@ -1,6 +1,6 @@
 +++
 title = "Crowdfunding and Demand Uncertainty"
-date = "2020-04-06"
+date = "2020-04-17"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]
@@ -17,8 +17,8 @@ authors = ["[Christoph Scheuch](https://christophscheuch.github.io/)"]
 publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "Work in Progress"
-publication_short = "Work in Progress"
+publication = "Working Paper"
+publication_short = "Working Paper"
 
 # Abstract and optional shortened version.
 abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments and, at the same time, to generate demand information that benefits screening for viable projects. I characterize the profit-maximizing crowdfunding mechanism when the entrepreneur knows neither the number of consumers who positively value the product, nor their reservation prices. The entrepreneur can finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if these information rents are large, then the entrepreneur prefers fixed high prices that lead to underinvestment."
@@ -36,7 +36,7 @@ selected = true
 projects = []
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3578402"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
