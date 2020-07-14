@@ -16,8 +16,6 @@ role: Head of BI & Data Science
 organizations:
 - name: wikifolio Financial Technologies
   url: "https://www.wikifolio.com"
-- name: Vienna Graduate School of Finance
-  url: "http://www.vgsf.ac.at/welcome/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My interests include Data Science, R and FinTech stuff.
@@ -46,7 +44,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:cscheuch@wu.ac.at'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:christoph.scheuch@wikifolio.com'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/KriseScheuch
@@ -76,6 +74,6 @@ email: ""
 ---
 I recently joined [wikifolio](https://www.wikifolio.com) as Head of Business Intelligence and Data Science. 
 
-I am also a PhD candidate at the [Vienna Graduate School of Finance](https://www.vgsf.ac.at/) where my research focuses on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. I currently investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 
+I also just graduated from the [Vienna Graduate School of Finance](https://www.vgsf.ac.at/) where my research focused on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. In my solo-authored paper, I investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 
 
 Before starting my PhD studies, I was a research assistant in the field of labor economics at the [Institute for Advanced Studies](https://www.ihs.ac.at/de/) and an intern at [Ithuba Capital](https://www.ithubacapital.com/home.html) and the Austrian [Financial Market Authority](https://www.fma.gv.at/).

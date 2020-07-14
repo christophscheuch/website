@@ -85,16 +85,16 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", repo_branch 
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "christoph.scheuch@wu.ac.at"
-phone = "+43-1-313 36 - 6321"
+email = "christoph.scheuch@wikifolio.com"
+phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Welthandelsplatz 1/D4", city = "Vienna", region = "", postcode = "1090", country = "Austria", country_code = "AT"}
+address = {street = "Berggasse 31", city = "Vienna", region = "", postcode = "1090", country = "Austria", country_code = "AT"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "48.214685", longitude = "16.407359"}
+coordinates = {latitude = "48.219251", longitude = "16.365461"}
 
 # Directions for visitors to locate you.
 directions = ""

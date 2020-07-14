@@ -21,7 +21,7 @@ publication = "Working Paper"
 publication_short = "Working Paper"
 
 # Abstract and optional shortened version.
-abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments and, at the same time, to generate demand information that benefits screening for viable projects. I characterize the profit-maximizing crowdfunding mechanism when the entrepreneur knows neither the number of consumers who positively value the product, nor their reservation prices. The entrepreneur can finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if these information rents are large, then the entrepreneur prefers fixed high prices that lead to underinvestment."
+abstract = "Reward-based crowdfunding allows entrepreneurs to sell claims on future products to finance investments and, at the same time, to generate demand information that benefits screening for viable projects. I characterize the profit-maximizing crowdfunding mechanism when the entrepreneur knows neither the number of consumers who positively value the product, nor their reservation prices. The entrepreneur can finance all viable projects by committing to prices that decrease in the number of pledgers, which grants consumers with high reservation prices information rents. However, if these information rents are large, then the entrepreneur prefers fixed high prices that lead to underinvestment.<br/><br/>Presentations: $2^{nd}$ Toronto FinTech Conference, VGSF Conference 2018 & 2019"
 abstract_short = ""
 
 # Featured image thumbnail (optional)

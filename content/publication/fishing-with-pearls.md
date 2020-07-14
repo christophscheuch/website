@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Fishing with Pearls: The Value of Lending Relationships with Prestigious Firms"
 date = "2017-11-16"
 
@@ -21,7 +21,7 @@ publication = "Working Paper"
 publication_short = "Working Paper"
 
 # Abstract and optional shortened version.
-abstract = "We provide novel evidence of banks establishing lending relationships with prestigious firms to signal their quality and attract future business. Using survey data on firm-level prestige, we show that lenders compete more intensely for prestigious borrowers and offer lower upfront fees to initiate lending relationships with prestigious firms. We also find that banks expand their lending after winning prestigious clients. Prestigious firms benefit from these relations as they face lower costs of borrowing even though prestige has no predictive power for credit risk. Our results are robust to matched sample analyses and a regression discontinuity design."
+abstract = "We provide novel evidence of banks establishing lending relationships with prestigious firms to signal their quality and attract future business. Using survey data on firm-level prestige, we show that lenders compete more intensely for prestigious borrowers and offer lower upfront fees to initiate lending relationships with prestigious firms. We also find that banks expand their lending after winning prestigious clients. Prestigious firms benefit from these relations as they face lower costs of borrowing even though prestige has no predictive power for credit risk. Our results are robust to matched sample analyses and a regression discontinuity design.<br/><br/>Presentations: FIRS Conference 2018"
 abstract_short = ""
 
 # Featured image thumbnail (optional)
