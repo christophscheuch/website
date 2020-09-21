@@ -5,9 +5,9 @@ summary: 'How to scrap environmental, social and governance (ESG) risk scores fr
 authors:
 - admin
 tags:
-- R, ESG
+- R
 categories:
-- R, ESG
+- R
 date: "2020-08-17T00:00:00Z"
 lastmod: "2020-08-17T00:00:00Z"
 featured: true
@@ -34,7 +34,7 @@ projects: []
 <dl>
 
 <p>In this post, I provide a recollection of my effort to scrap Environmental, Social and Governance (ESG) information from Yahoo Finance (e.g., <a href="https://finance.yahoo.com/quote/AAPL/sustainability?p=AAPL">Apple</a>). In particular, Yahoo Finance provides total ESG scores, environment, social and governance risk scores, as well as controversy levels, all compiled by <a href="https://www.sustainalytics.com/">Sustainalytics</a> which is by now owned by Morningstar. My code builds on the walk-through by <a href="https://www.kylerudden.com/blog/scraping-esg-scores/">Kyle Ruden</a>, which I adapted to the current page structure of Yahoo Finance and my own coding style. In addition, I added a few steps that I, as web scraping newbie, had to look up while going through his guide.</p>
-<p>To begin with, I want to urge you to read at least the legal and ethical considerations put forward by <a href="https://www.sustainalytics.com/">Kyle</a>. Most importantly, I want to mention that, when performing web scraping tasks, it is both good practice and often required to set a custom user agent request header to identify yourself, as well as sending requests at a modest rate to ‘smell like a human’. I consider both of these key aspects in my code below.</p>
+<p>To begin with, I want to urge you to read at least the legal and ethical considerations put forward by <a href="https://www.kylerudden.com/blog/scraping-esg-scores/">Kyle</a>. Most importantly, I want to mention that, when performing web scraping tasks, it is both good practice and often required to set a custom user agent request header to identify yourself, as well as sending requests at a modest rate to ‘smell like a human’. I consider both of these key aspects in my code below.</p>
 <p>Throughout this note, I rely on the following packages:</p>
 <pre class="r"><code>library(tidyverse) # overall grammar
 library(tidytext)  # only for reorder_within function
