@@ -10,7 +10,7 @@ categories:
 - R
 date: "2020-11-15T00:00:00Z"
 lastmod: "2020-11-15T00:00:00Z"
-featured: true
+featured: false
 draft: false
 
 # Featured image

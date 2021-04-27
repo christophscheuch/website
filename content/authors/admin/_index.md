@@ -72,6 +72,8 @@ email: ""
 # - Researchers
 # - Visitors
 ---
-I recently joined [wikifolio](https://www.wikifolio.com) as Head of Business Intelligence and Data Science. 
+I am the Head of Business Intelligence and Data Science at the social trading platform [wikifolio](https://www.wikifolio.com). 
 
 Before joining wikifolio, I graduated from the [Vienna Graduate School of Finance](https://www.vgsf.ac.at/) where my research focused on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. In my solo-authored paper, I investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 
+
+In my spare time, I replicate asset pricing approaches or build visualizations for arbitrary economic stories which all eventually end up on this page. 

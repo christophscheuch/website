@@ -10,7 +10,7 @@ categories:
 - Blockchain
 date: "2019-12-03T00:00:00Z"
 lastmod: "2019-12-03T00:00:00Z"
-featured: true
+featured: false
 draft: false
 
 # Featured image
