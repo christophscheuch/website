@@ -10,7 +10,7 @@ categories:
 - Asset Pricing
 date: "2020-01-24T00:00:00Z"
 lastmod: "2021-04-18T00:00:00Z"
-featured: true
+featured: false
 draft: false
 
 # Featured image
