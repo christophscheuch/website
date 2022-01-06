@@ -46,14 +46,14 @@ subtitle = ""
  css_class = ""
 +++
 
-I was a teaching assistant for the following courses:
+### Experience
 
 * _University of Vienna_: Calculus, Keynes for Beginners, International Macroeconomics, Macroeconomics and Inequality
 * _TU (Vienna University of Technology)_: Microeconomics
 * _Gutman Private Welath Management Seminar_: FinTech
 * _WU (Vienna University of Economics and Business)_: Linear Algebra
 
-Some useful notes for students:
+### Materials
 
 * [How to Master a Bachelor Thesis](/files/teaching/styleguide_v3.pdf) by my colleague [Stefan Voigt](https://voigtstefan.github.io/) and me
 * A [tex-template](/files/teaching/styleguide_v3.tex) for bachelor theses
