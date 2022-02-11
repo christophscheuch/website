@@ -32,6 +32,9 @@ projects: []
 ---
 
 <dl>
+
+<p><b>Update 2022-02-11: check out our new book <a href="https://tidy-finance.org/">Tidy Finance with R</a> for an updated and improved implementation of the content below. </b></p>
+
 <p>In this note, I explore the positive relation between the book-to-market (BM) ratio and expected stock returns – called the value premium – following <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a>. In three earlier notes, I first <a href="https://christophscheuch.github.io/post/asset-pricing/crsp-sample/">prepared the CRSP sample</a> in R, <a href="https://christophscheuch.github.io/post/asset-pricing/beta/">estimated and analyzed market betas</a> and <a href="https://christophscheuch.github.io/post/asset-pricing/size/">analyzed the relation between firm size and stock returns</a> using the same data. I do not go into the theoretical foundations of the value premium, but rather focus on its estimation in a tidy manner. The usual disclaimer applies, so the text below references an opinion and is for information purposes only and I do not intend to provide any investment advice. The code below replicates most of the results of Bali et al. up to a few basis points if I restrict my data to their sample period. If you spot any mistakes or want to share any suggestions for better implementation, just drop a comment below.</p>
 <p>I mainly use the following packages throughout this note:</p>
 <pre class="r"><code>library(tidyverse)

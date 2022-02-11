@@ -33,6 +33,8 @@ projects: []
 
 <dl>
 
+<p><b>Update 2022-02-11: check out our new book <a href="https://tidy-finance.org/">Tidy Finance with R</a> for an updated and improved implementation of the content below. </b></p>
+
 <p>As a newbie to the empirical asset pricing literature, I found it quite hard to fully grasp how results come about solely relying on the data descriptions in the corresponding papers. Fortunately, <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a> (BEM) provide an excellent textbook that not only provides a comprehensive overview of the empirical research on the cross-section of expected returns, but also offers detailed description of common practices in sample construction and methodology. In this series of notes, I replicate the main results of their textbook in R. Moreover, I try to implement all analyses in a tidy manner using mainly packages beloning to the <a href="https://www.tidyverse.org/">tidyverse</a> family since it’s fun and fairly transparent.</p>
 <p>In this first note I start out with the raw monthly CRSP data, compute some descriptive statistics and construct the main sample I use in later analyses. In the following notes, I use the constructed sample to investigate the size effect. As a start, here is the list of packages that I use throughout the note.</p>
 <pre class="r"><code>library(tidyverse) # for grammar
