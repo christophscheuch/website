@@ -21,7 +21,7 @@ interests:
 - FinTech
 organizations:
 - name: wikifolio Financial Technologies AG
-  url: "https://www.wikifolio.com"
+  url: "https://www.wikifolio.com?utm_source=christophscheuch.github.io"
 role: Director of Product
 social:
 - icon: envelope
@@ -46,6 +46,6 @@ superuser: true
 title: Christoph Scheuch
 ---
 
-I am the Director of Product at the social trading platform [wikifolio.com](https://www.wikifolio.com) and co-author of the book [Tidy Finance with R](https://tidy-finance.org/). 
+I am the Director of Product at the social trading platform [wikifolio.com](https://www.wikifolio.com?utm_source=christophscheuch.github.io) and co-author of the book [Tidy Finance with R](https://tidy-finance.org?utm_source=christophscheuch.github.io). 
 
-Before joining wikifolio, I graduated from the [Vienna Graduate School of Finance](https://www.vgsf.ac.at/) where my research focused on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. In my solo-authored paper, I investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 
+Before joining wikifolio, I graduated from the [Vienna Graduate School of Finance](https://www.vgsf.ac.at?utm_source=christophscheuch.github.io) where my research focused on the economics of technological innovations in the financial sector. One of my papers shows how blockchain-based settlement introduces limits to arbitrage in cross-market trading. In another paper, I analyze how consumers react to the introduction of overdraft facilities through a mobile banking app. In my solo-authored paper, I investigate the potential of crowdfunding mechanisms to elicit demand information and improve the screening of viable projects under different valuation structures. 

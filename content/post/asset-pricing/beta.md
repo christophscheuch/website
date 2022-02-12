@@ -32,7 +32,7 @@ projects: []
 ---
 
 <dl>
-<p><b>Update 2022-02-11: check out our new book <a href="https://tidy-finance.org/">Tidy Finance with R</a> for an updated and improved implementation of the content below. </b></p>
+<p><b>Update 2022-02-11: check out our new book <a href="https://tidy-finance.org?utm_source=christophscheuch.github.io">Tidy Finance with R</a> for an updated and improved implementation of the content below. </b></p>
 
 <p>This note proposes an estimation and evaluation procedure for market betas following <a href="https://www.wiley.com/en-us/Empirical+Asset+Pricing%3A+The+Cross+Section+of+Stock+Returns-p-9781118095041">Bali, Engle and Murray</a> (BEM). I do not go into details about the foundations of market beta, but simply refer to any treatment of the Capital Asset Pricing Model (<a href="https://en.wikipedia.org/wiki/Capital_asset_pricing_model">CAPM</a>). However, I provide details about all the functions that I use to compute my results. As the post introduces a number of approaches of BEM, there are also many functions to discuss. Subsequent blog posts then recycle most of the functions.</p>
 <p>This note has two objectives: the first one is to implement several approaches to estimate a stock’s beta in a tidy manner and to empirically examine these measures. The second objective is to analyze the cross-sectional relation between stock returns and market beta. The following disclaimer applies: the text below references an opinion and is for information purposes only and I do not intend to provide any investment advice.</p>
