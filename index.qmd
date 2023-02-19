@@ -1,0 +1,59 @@
+---
+title: ""
+website:
+  page-navigation: true
+about:
+  id: hero-heading
+  template: trestles
+  image: avatar.jpeg
+  image-width: 15em
+  image-shape: round
+  links:
+    - icon: envelope
+      text: Mail
+      href: 'mailto:christoph.scheuch@wikifolio.com'  # For a direct email link, use "mailto:test@example.org".
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/KriseScheuch
+    - icon: github
+      text: Github
+      href: https://github.com/christophscheuch
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/christophscheuch/
+---
+
+:::{#hero-heading}
+
+I am the Director of Product at the social trading platform **[wikifolio.com](https://www.wikifolio.com?utm_source=christophscheuch.github.io)** and co-author of the book **[Tidy Finance with R](https://www.tidy-finance.org?utm_source=christophscheuch.github.io)**
+
+## Education
+
+Vienna Graduate School of Finance <br/>
+PhD in Finance | Sep 2015 - Jun 2020
+
+University of Vienna <br/>
+MSc in Economics | Sep 2009 - Jun 2015
+
+:::
+
+# Research 
+
+**[Crowdfunding and Demand Uncertainty](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3578402)**
+
+**[Perceived Precautionary Savings Motives: Evidence from FinTech](https://www.nber.org/papers/w26817)**<br/>
+Joint work with Francesco D’Acunto, Thomas Rauter and Michael Weber
+
+**[Building Trust Takes Time: Limits to Arbitrage in Blockchain-Based Markets](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302159)**<br/>
+Joint work with Nikolaus Hautsch and Stefan Voigt
+
+**[Fishing with Pearls: The Value of Lending Relationships with Prestigious Firms](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2703343)**<br/>
+Joint work with Alexander Mürmann and Thomas Rauter
+
+# Teaching
+
+* Gutman Private Wealth Management Seminar: FinTech
+* Perm Winter School: Liquidity Monitoring
+* University of Vienna: Calculus, Keynes for Beginners, International Macroeconomics, Macroeconomics and Inequality
+* WU (Vienna University of Economics and Business): Linear Algebra, Industry Lab
+* TU (Vienna University of Technology): Microeconomics

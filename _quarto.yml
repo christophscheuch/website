@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Christoph Scheuch"
+  site-url: https://christophscheuch.github.io/
+  description: "A personal website"
+  favicon: favicon.png
+  open-graph: true
+  page-navigation: true
+  search: false
+  google-analytics: 
+    tracking-id: "UA-173478655-1"
+    anonymze-ip: true
+  cookie-consent: 
+    type: express
+    style: interstitial 
+    palette: light
+  navbar:
+    left:
+      - href: index.qmd#research
+        text: Research
+      - href: index.qmd#teaching
+        text: Teaching
+  page-footer:
+    center:
+      - text: "&copy; Chistoph Scheuch"
+
+format:
+  html:
+    theme: 
+      light: [cosmo, theme-light.scss]
+    css: styles.css
+    toc: true
+    section-divs: true
+    number-sections: false
+    embed-resources: false
+    anchor-sections: true
+    smooth-scroll: true
+
+
+
